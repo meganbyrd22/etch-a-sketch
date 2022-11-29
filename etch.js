@@ -14,5 +14,9 @@ function createGrid(){
         let cell = document.createElement("div"); 
         gridContainer.appendChild(cell);
     }
-    createGrid(16);
-}}
+}
+}
+
+createGrid(16);
+
+
