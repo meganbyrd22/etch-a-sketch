@@ -1,8 +1,13 @@
 #gridContainer {
     display: grid;
-    border-color: black;
-    height: auto;
+    grid-template-columns: auto, auto, auto;
+    height: 600px;
     width: auto;
+    border-color: black;
+    border-radius: 2em;
+    background-color: purple;
+  
+    
 }
 
 .div{
