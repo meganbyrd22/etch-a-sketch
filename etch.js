@@ -3,5 +3,5 @@ let gridContainer = document.getElementsByClassName("gridContainer");
 
 //create divs
 let cell = document.createElement("div");
-gridContainer.appendChild("cell")
+gridContainer.appendChild(cell);
    
