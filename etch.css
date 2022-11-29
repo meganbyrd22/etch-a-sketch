@@ -3,9 +3,11 @@
     grid-template-columns: auto, auto, auto;
     height: 600px;
     width: auto;
+    border: solid black;
     border-color: black;
+    border-width: 6px;
     border-radius: 2em;
-    background-color: purple;
+    background-color: whitesmoke;
   
     
 }
