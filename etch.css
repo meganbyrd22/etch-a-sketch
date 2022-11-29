@@ -1,4 +1,4 @@
-.gridContainer {
+#gridContainer {
     display: grid;
     border-color: black;
     height: auto;
