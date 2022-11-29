@@ -6,10 +6,10 @@ const gridContainer = document.getElementById("gridContainer")
 //gridContainer.appendChild(cell);
 
 //funtion to create grid
-function createGrid(x){
-    for (let rows = 0; rows <=x; rows++)
+function createGrid(){
+    for (let rows = 0; rows <16; rows++)
     {
-        for (let columns = 0; columns < x; columns++ ){
+        for (let columns = 0; columns < 16; columns++ ){
 
         let cell = document.createElement("div"); 
         gridContainer.appendChild(cell);
