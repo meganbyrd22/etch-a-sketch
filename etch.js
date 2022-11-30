@@ -22,11 +22,11 @@ function createGrid(){
 createGrid(16);
 
 //event listener for hover and color change
-let allCells = document.querySelectorAll("cells");
+let allCells = document.querySelectorAll('cells');
 
 allCells.forEach((cells) => {
 
-allCells.addEventListener('mouseover', () => {
+cells.addEventListener('mouseover', () => {
         document.cells.style.backgroundColor = "black";
     })
 })
