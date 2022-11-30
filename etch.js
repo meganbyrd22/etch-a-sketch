@@ -12,7 +12,9 @@ function createGrid(){
         for (let columns = 0; columns < 16; columns++ ){
 
         let cell = document.createElement("div"); 
-        gridContainer.appendChild(cell);
+        (gridContainer).appendChild(cell);
+
+        cell.setAttribute('id', 'cells')
     }
 }
 }
