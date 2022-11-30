@@ -1,6 +1,18 @@
+h1{
+    display: flex;
+    justify-self: flex-start;
+    justify-content: center;
+    color: rgb(84, 33, 113);
+    font-weight:600;
+    font-size: 300;
+    width: 300px;
+}
+
 body{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
+    margin-top: 50px;
 }
 
 #gridContainer {
