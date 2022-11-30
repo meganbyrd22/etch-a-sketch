@@ -3,10 +3,6 @@
     grid-template-columns: repeat(16, 1fr);
     height: 600px;
     width: auto;
-    border: solid black;
-    border-color: black;
-    border-width: 6px;
-    border-radius: 2em;
     background-color: whitesmoke;
   
     
