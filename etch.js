@@ -27,7 +27,7 @@ let allCells = document.querySelectorAll('cells');
 allCells.forEach((cells) => {
 
 cells.addEventListener('mouseover', () => {
-    document.getElementById("cells").style.backgroundColor = "black";
+    document.querySelectorAll("cells").style.backgroundColor = "black";
     })
     
 })
