@@ -17,6 +17,14 @@ function createGrid(){
 
         cell.setAttribute('id', 'cells')
     }
+    //event listener for hover and color change
+    const cells = document.querySelectorAll('cells');
+
+    cells.forEach((cell) => 
+
+    cell.addEventListener(mouseenter, ()=>
+        cell.style.backgroundColor = "black")
+    )
 }
 }
 
@@ -24,14 +32,7 @@ createGrid(16);
 
 
 
-//event listener for hover and color change
-const cells = document.querySelectorAll('cells');
 
-cells.forEach((cell) => 
-
-cell.addEventListener(mouseenter, ()=>
-    cell.style.backgroundColor = "black")
-)
     
 
 
