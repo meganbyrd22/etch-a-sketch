@@ -1,6 +1,8 @@
 //add html elements
 const gridContainer = document.getElementById("gridContainer")
 
+gridContainer.addEventListener('mouseenter', changeColor);
+
 //create cell element
 //let cell = document.createElement("div");
 //gridContainer.appendChild(cell);
@@ -20,6 +22,8 @@ function createGrid(){
 }
 
 createGrid(16);
+
+
 
 //event listener for hover and color change
 let allCells = document.querySelectorAll('cells');
