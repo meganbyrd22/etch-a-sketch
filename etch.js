@@ -2,9 +2,6 @@
 const gridContainer = document.getElementById("gridContainer")
 const cells = document.querySelectorAll("cells");
 
-//create cell element
-//let cell = document.createElement("div");
-//gridContainer.appendChild(cell);
 
 //funtion to create grid
 function createGrid(){
