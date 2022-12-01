@@ -1,7 +1,6 @@
 //add html elements
 const gridContainer = document.getElementById("gridContainer")
 
-gridContainer.addEventListener('mouseenter', changeColor);
 
 //create cell element
 //let cell = document.createElement("div");
@@ -30,13 +29,10 @@ let allCells = document.querySelectorAll('cells');
 
 allCells.forEach(cells => {
 
-cells.addEventListener('mouseenter', (changeColor))
-
-
-function changeColor(){
+cells.addEventListener('mouseenter', () => {
     cells.setAttribute(style.backgroundColor = "black")
 }
-})
+)
     
 
 
