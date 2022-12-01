@@ -25,7 +25,7 @@ createGrid(16);
 
 
 //event listener for hover and color change
-let cells = document.querySelectorAll('cells');
+const cells = document.querySelectorAll('cells');
 
 cells.forEach((cell) => 
 
