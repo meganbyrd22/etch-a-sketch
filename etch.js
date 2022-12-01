@@ -22,15 +22,17 @@ function createGrid(){
 
     cells.forEach((cell) => 
 
-    cell.addEventListener(mouseenter, ()=>
-        cell.style.backgroundColor = "black")
+    cell.addEventListener(mouseenter, changeColor)
     )
 }
 }
 
 createGrid(16);
 
-
+//function to change color 
+function changeColor(e){
+    e.target.style.backgroundColor = 'black';
+}
 
 
     
