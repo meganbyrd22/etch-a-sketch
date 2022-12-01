@@ -26,7 +26,7 @@ let allCells = document.querySelectorAll('cells');
 
 allCells.forEach((cells) => {
 
-cells.addEventListener('mouseEnter', () => 
+cells.addEventListener('mouseenter', () => 
     cells.style.backgroundColor = 'black')})
 
 
