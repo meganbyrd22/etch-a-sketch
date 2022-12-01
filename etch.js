@@ -1,6 +1,6 @@
 //add html elements
 const gridContainer = document.getElementById("gridContainer")
-
+const cells = document.querySelectorAll("cells");
 
 //create cell element
 //let cell = document.createElement("div");
@@ -18,7 +18,6 @@ function createGrid(){
         cell.setAttribute('id', 'cells')
     }
     //event listener for hover and color change
-    const cells = document.querySelectorAll('cells');
 
     cells.forEach((cell) => 
 
