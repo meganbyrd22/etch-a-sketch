@@ -8,22 +8,21 @@ function createGrid(){
     for (let rows = 0; rows <16; rows++)
     {
         for (let columns = 0; columns < 16; columns++ ){
-//create cells element 
-        let cell = document.createElement("div"); cell.setAttribute('id', 'cells');
-//add event listenter to each cell    
-        cells.forEach((cell) => 
-
-        cell.addEventListener("mouseover", changeColor)
-        )
-//append cell element to grid container
-        (gridContainer).appendChild(cell);
-
         
+        let cell = document.createElement("div"); gridContainer.appendChild(cell);
+            
+        cell.setAttribute('id', 'cells');
     } 
 }
 }
 
 createGrid(16);
+
+//add event listenter to each cell    
+cells.forEach((cells) => 
+
+cells.addEventListener('mouseover', changeColor)
+)
 
 //function to change color 
 function changeColor(e){
