@@ -5,13 +5,16 @@ const cells = document.querySelectorAll("cells");
 
 //funtion to create grid
 function createGrid(){
+    //create grid
     for (let rows = 0; rows <16; rows++)
     {
-        for (let columns = 0; columns < 16; columns++ ){
-        
-        let cell = document.createElement("div"); gridContainer.appendChild(cell);
-            
-        cell.setAttribute('id', 'cells');
+    for (let columns = 0; columns < 16; columns++ ){
+    
+        //create cell element    
+    let cell = document.createElement("div"); gridContainer.appendChild(cell);
+    
+     //name cell element       
+    cell.setAttribute('id', 'cells');
     } 
 }
 }
