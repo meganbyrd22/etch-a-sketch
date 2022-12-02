@@ -16,6 +16,11 @@ function createGrid(){
      //name cell element       
     cell.setAttribute("id", "cells");
 
+    cells.forEach((cells) => 
+
+    cells.addEventListener('mouseover', changeColor)
+    )
+
     gridContainer.appendChild(cell)
     } 
 }
@@ -24,10 +29,7 @@ function createGrid(){
 createGrid(16);
 
 //add event listenter to each cell    
-cells.forEach((cells) => 
 
-cells.addEventListener('mouseover', changeColor)
-)
 
 //function to change color 
 function changeColor(e){
