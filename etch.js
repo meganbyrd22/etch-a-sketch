@@ -10,11 +10,13 @@ function createGrid(){
     {
     for (let columns = 0; columns < 16; columns++ ){
     
-        //create cell element    
-    let cell = document.createElement("div"); gridContainer.appendChild(cell);
+    //create cell element    
+    let cell = document.createElement("div");
     
      //name cell element       
-    cell.setAttribute('id', 'cells');
+    cell.setAttribute("id", "cells");
+
+    gridContainer.appendChild(cell)
     } 
 }
 }
