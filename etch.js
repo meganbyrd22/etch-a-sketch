@@ -1,6 +1,6 @@
 //add html elements
 const gridContainer = document.getElementById("gridContainer")
-const cells = document.querySelectorAll("cells");
+//const cells = document.querySelectorAll("cell");
 
 
 //funtion to create grid
@@ -17,10 +17,10 @@ function createGrid(){
     cell.setAttribute("id", "cell"); 
 
     //add eventLister
-    cells.forEach((cells) => 
+    //cells.forEach((cells) => 
 
     cells.addEventListener('mouseover', changeColor)
-    )
+    //)
     //append to DOM
     gridContainer.appendChild(cell)
     } 
