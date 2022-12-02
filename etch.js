@@ -8,20 +8,18 @@ function createGrid(){
     for (let rows = 0; rows <16; rows++)
     {
         for (let columns = 0; columns < 16; columns++ ){
+//create cells element 
+        let cell = document.createElement("div"); cell.setAttribute('id', 'cells');
+//add event listenter to each cell    
+        cells.forEach((cell) => 
 
-        let cell = document.createElement("div"); 
+        cell.addEventListener("mouseover", changeColor)
+        )
+//append cell element to grid container
         (gridContainer).appendChild(cell);
 
-        cell.setAttribute('id', 'cells')
-    }
-    //event listener for hover and color change
-
-    cells.forEach((cell) => 
-
-    cell.addEventListener("mouseover", changeColor)
-    )
-
-    gridContainer.appendChild(cell)
+        
+    } 
 }
 }
 
