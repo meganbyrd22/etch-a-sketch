@@ -14,7 +14,7 @@ function createGrid(){
     let cell = document.createElement("div");
     
      //name cell element       
-    cell.setAttribute("id", "cells"); 
+    cell.setAttribute("id", "cell"); 
 
     //add eventLister
     cells.forEach((cells) => 
