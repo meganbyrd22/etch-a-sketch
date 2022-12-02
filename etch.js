@@ -19,7 +19,7 @@ function createGrid(){
     //add eventLister
     //cells.forEach((cells) => 
 
-    cells.addEventListener('mouseover', changeColor)
+    cell.addEventListener('mouseover', changeColor)
     //)
     //append to DOM
     gridContainer.appendChild(cell)
