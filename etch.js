@@ -14,13 +14,14 @@ function createGrid(){
     let cell = document.createElement("div");
     
      //name cell element       
-    cell.setAttribute("id", "cells");
+    cell.setAttribute("id", "cells"); 
 
+    //add eventLister
     cells.forEach((cells) => 
 
     cells.addEventListener('mouseover', changeColor)
     )
-
+    //append to DOM
     gridContainer.appendChild(cell)
     } 
 }
