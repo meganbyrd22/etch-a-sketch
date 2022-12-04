@@ -27,13 +27,18 @@ function createGrid(){
 
 createGrid(16);
 
-  
-
-
 //function to change color 
 function changeColor(e){
     e.target.style.backgroundColor = 'black';
 }
+
+//button function for prompt 
+function promptUser()
+    let newGrid = prompt("Please enter the number of squares you'd like for each side of your grid")
+    if (newGrid >= 100){
+        return "Please enter a mnumber that is less than 100"
+    }
+
 
 
     
