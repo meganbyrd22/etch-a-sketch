@@ -33,11 +33,26 @@ function changeColor(e){
 }
 
 //button function for prompt 
-function promptUser()
-    let newGrid = prompt("Please enter the number of squares you'd like for each side of your grid")
-    if (newGrid >= 100){
-        return "Please enter a mnumber that is less than 100"
-    }
+//document.getElementById(newGrid).addEventListener('click', function(){
+    //let numSquares = prompt("Please enter the number of squares you'd like for each side of your grid")
+    //if (numSquares >= 100){
+       // return "Please enter a number that is less than 100"
+       //else {createNewGrid()}
+    //}}
+
+    //createNewGrid(numSquares);
+
+//function to create new grid from user response
+//function createNewGrid(){
+    //use original createGrid but input user # of squares for rows and columns
+    //remove old grid with element.remove();
+//}
+
+
+
+
+
+
 
 
 
