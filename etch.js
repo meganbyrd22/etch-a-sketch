@@ -31,12 +31,12 @@ function changeColor(e){
 }
 
 //button function for prompt 
-//document.getElementById(newGridButton).addEventListener('click', function(){
-    //let numSquares = prompt("Please enter the number of squares you'd like for each side of your grid")
-    //if (numSquares >= 100){
-        //return "Please enter a number that is less than 100"
-       //else {createNewGrid()}
-    //}}
+document.getElementById(newGridButton).addEventListener('click', function(){
+    let numSquares = prompt("Please enter the number of squares you'd like for each side of your grid")
+    if (numSquares >= 100){
+        return "Please enter a number that is less than 100"}
+       else {createNewGrid()}
+    })
 
     //createNewGrid(numSquares);
 
