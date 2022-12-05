@@ -32,7 +32,7 @@ function changeColor(e){
 }
 
 //button function for prompt 
-newGridButton.addEventListener('click', getNumSquares());
+newGridButton.onclick= getNumSquares();
 
 function getNumSquares(){
     let numSquares = prompt("Please enter the number of squares you'd like for each side of your grid")
