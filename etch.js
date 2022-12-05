@@ -35,10 +35,11 @@ function changeColor(e){
 newGridButton.addEventListener('click', function(){let numSquares = prompt("Please enter the number of squares you'd like for each side of your grid")
     if (numSquares >= 100){
         return "Please enter a number that is less than 100"}
-       else {createNewGrid()}
+       else {createGrid(numSquares)}
+       //convert to number
     })
 
-    //createNewGrid(numSquares);
+//createNewGrid(numSquares); Do I need this if it's called in the else statement?
 
 //function to create new grid from user response
 //function createNewGrid(){
