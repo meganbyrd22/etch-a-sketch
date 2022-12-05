@@ -1,5 +1,6 @@
 //add html elements
 const gridContainer = document.getElementById("gridContainer")
+const newGridButton = document.getElementById("newGridButton")
 
 //funtion to create grid
 function createGrid(){
@@ -31,7 +32,7 @@ function changeColor(e){
 }
 
 //button function for prompt 
-document.getElementById(newGridButton).addEventListener('click', getNumSquares());
+newGridButton.addEventListener('click', getNumSquares());
 
 function getNumSquares(){
     let numSquares = prompt("Please enter the number of squares you'd like for each side of your grid")
