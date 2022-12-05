@@ -1,6 +1,15 @@
 //add html elements
-const gridContainer = document.getElementById("gridContainer")
-const newGridButton = document.getElementById("newGridButton")
+const gridContainer = document.getElementById("gridContainer");
+const newGridButton = document.getElementById("newGridButton");
+//let numSquares = " ";
+
+//button function for prompt 
+newGridButton.addEventListener('click', function(){let numSquares = prompt("Please enter the number of squares you'd like for each side of your grid")
+    if (numSquares >= 100){
+        return "Please enter a number that is less than 100"}
+       else {createGrid(numSquares)}
+       //convert to number
+    })
 
 //funtion to create grid
 function createGrid(){
@@ -8,7 +17,7 @@ function createGrid(){
     for (let rows = 0; rows <16; rows++)
     {
     for (let columns = 0; columns < 16; columns++ ){
-    
+
     //create cell element    
     let cell = document.createElement("div");
     
@@ -31,13 +40,7 @@ function changeColor(e){
     e.target.style.backgroundColor = 'black';
 }
 
-//button function for prompt 
-newGridButton.addEventListener('click', function(){let numSquares = prompt("Please enter the number of squares you'd like for each side of your grid")
-    if (numSquares >= 100){
-        return "Please enter a number that is less than 100"}
-       else {createGrid(numSquares)}
-       //convert to number
-    })
+
 
 //createNewGrid(numSquares); Do I need this if it's called in the else statement?
 
