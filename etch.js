@@ -60,19 +60,18 @@ function createNewGrid(){
        
     //append to DOM
     newGridContainer.appendChild(newCell);
-    
+
     //add styles to cell and container
     document.getElementById("newGridContainer").style.display = "grid";
     document.getElementById("newGridContainer").style.height = "800px";
     document.getElementById("newGridContainer").style.width= "800px" 
 
-    document.getElementById("newCell").style.border = "thick solid";
+    document.getElementById("newCell").style.border = "solid";
     document.getElementById("newCell").style.borderColor = "black";
     document.getElementById("newCell").style.width = "50px";
     document.getElementById("newCell").style.height = "50px";
     }  
 
-    
     
 }}
 
