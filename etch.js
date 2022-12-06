@@ -7,7 +7,7 @@ let numSquares = " " //add div in html?
 newGridButton.addEventListener('click', function(){let numSquares = prompt("Please enter the number of squares you'd like for each side of your grid")
     if (parseInt(numSquares) >= 100){
         return "Please enter a number that is less than 100"}
-       else {createGrid(parseInt(numSquares))}
+       else {return numSquares}
     })
 
 //funtion to create original grid
@@ -31,9 +31,7 @@ function createGrid(){
     } 
 }
 }
-
 createGrid(16);
-
 
 //function to change color 
 function changeColor(e){
@@ -59,6 +57,7 @@ function createNewGrid(){
     }  
 }
 }
+createNewGrid(parseInt(numSquares));
 
 //function to create new grid from user response
 //function createNewGrid(){
