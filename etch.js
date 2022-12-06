@@ -1,13 +1,13 @@
 //add html elements
 const gridContainer = document.getElementById("gridContainer");
 const newGridButton = document.getElementById("newGridButton");
-let numSquares = " " //add div in html?
+//let numSquares = " " //add div in html?
 
 //button function for prompt 
-newGridButton.addEventListener('click', function(){let numSquares = prompt("Please enter the number of squares you'd like for each side of your grid")
-    if (parseInt(numSquares) >= 100){
+newGridButton.addEventListener('click', function(){let numSquares = Number(prompt("Please enter the number of squares you'd like for each side of your grid"))
+    if ((numSquares) >= 100){
         return "Please enter a number that is less than 100"}
-       else {return numSquares}
+    else {return numSquares}
     })
 
 //funtion to create original grid
@@ -39,9 +39,9 @@ function changeColor(e){
 }
 
 function createNewGrid(){
-    for (let rows = (parseInt(numSquares)); rows <100; rows++)
+    for (let rows = (numSquares); rows <100; rows++)
     {
-    for (let columns = (parseInt(numSquares)); columns < 16; columns++ ){
+    for (let columns = (numSquares); columns < 16; columns++ ){
     
      //create cell element    
     let cell = document.createElement("div");
@@ -57,7 +57,7 @@ function createNewGrid(){
     }  
 }
 }
-createNewGrid(parseInt(numSquares));
+createNewGrid(numSquares);
 
 //function to create new grid from user response
 //function createNewGrid(){
