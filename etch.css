@@ -19,6 +19,8 @@ body{
     display: grid;
     grid-template-columns: repeat(16, 1fr);
     background-color: whitesmoke;
+    width: 800px;
+    height: 800px;
 }
 
 #cell{
