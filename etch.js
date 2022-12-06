@@ -1,14 +1,13 @@
 //add html elements
 const gridContainer = document.getElementById("gridContainer");
 const newGridButton = document.getElementById("newGridButton");
-//let numSquares = " ";
+let numSquares = " " //add div in html?
 
 //button function for prompt 
 newGridButton.addEventListener('click', function(){let numSquares = prompt("Please enter the number of squares you'd like for each side of your grid")
     if (numSquares >= 100){
         return "Please enter a number that is less than 100"}
-       else {createGrid(numSquares)}
-       //convert to number
+       else {createGrid(parseInt(numSquares))}
     })
 
 //funtion to create grid
@@ -49,6 +48,7 @@ function changeColor(e){
     //use original createGrid but input user # of squares for rows and columns
     //remove old grid with element.remove();
 //}
+
 
 
 
