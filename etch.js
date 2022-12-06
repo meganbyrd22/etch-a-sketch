@@ -54,25 +54,30 @@ function createNewGrid(){
     //name cell element       
     newCell.setAttribute("id", "newCell"); 
 
-    
-    
     newCell.addEventListener('mouseover', changeColor)
        
     //append to DOM
     newGridContainer.appendChild(newCell);
 
     //add styles to cell and container
+    
     document.getElementById("newGridContainer").style.display = "grid";
     document.getElementById("newGridContainer").style.height = "800px";
     document.getElementById("newGridContainer").style.width= "800px" 
 
-    document.getElementById("newCell").style.border = "solid";
-    document.getElementById("newCell").style.borderColor = "black";
-    document.getElementById("newCell").style.width = "50px";
-    document.getElementById("newCell").style.height = "50px";
-    }  
+    let allNewCells = document.querySelectorAll(".newCell");
+    allNewCells.forEach(newCell => {
+        newCell.style.border = "solid";
+        newCell.style.borderColor = "black";
+    });
+    //allNewCells.style.border = "solid";
 
-    
+    //document.getElementById("#newCell").style.border = "solid";
+    //document.getElementById("newCell").style.borderColor = "black";
+    //document.getElementById("newCell").style.width = "50px";
+    //document.getElementById("newCell").style.height = "50px";
+    }  
+  
 }}
 
 //change color for newGrid
