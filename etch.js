@@ -59,6 +59,13 @@ function createNewGrid(){
     //append to DOM
     newGridContainer.appendChild(newCell)
     }  
+
+    //add styles to cell and container
+    document.getElementById(newCell).style.border = "solid black";
+    document.getElementById(newCell).style.width = "50px";
+    document.getElementById(newCell).style.height = "50px";
+    document.getElementById(newGridContainer).style.height = "800px";
+    document.getElementById(newGridContainer).style.width= "800px"
 }}
 
 //change color for newGrid
