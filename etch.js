@@ -8,8 +8,10 @@ const newGridContainer = document.getElementById("newGridContainer");
 newGridButton.addEventListener('click', function(){let numSquares = Number(prompt("Please enter the number of squares you'd like for each side of your grid"))
     if ((numSquares) >= 100){
         return "Please enter a number that is less than 100"}
-    else {return numSquares}
+    else {createNewGrid(numSquares)}
     })
+
+;
 
 //funtion to create original grid
 function createGrid(){
@@ -39,11 +41,13 @@ function changeColor(e){
     e.target.style.backgroundColor = 'black';
 }
 
-//function createNewGrid(){
+function createNewGrid(){
     for (let rows = 0; rows <100; rows++)
     {
     for (let columns = 0; columns <100; columns++ ){
-    
+    //remove original gridContainer 
+    gridContainer.style.display = "none";
+
      //create cell element    
     let newCell = document.createElement("div");
         
@@ -55,7 +59,7 @@ function changeColor(e){
     //append to DOM
     newGridContainer.appendChild(newCell)
     }  
-}
+}}
 
 //change color for newGrid
 function newChangeColor(e){
