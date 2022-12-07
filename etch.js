@@ -69,6 +69,8 @@ function createNewGrid(){
     allNewCells.forEach(newCell => {
         newCell.style.border = "solid";
         newCell.style.borderColor = "black";
+        newCell.style.height = "50px";
+        newCell.style.width = "50px";
     });
     //allNewCells.style.border = "solid";
 
@@ -94,6 +96,8 @@ function newChangeColor(e){
     //use original createGrid but input user # of squares for rows and columns
     //remove old grid with element.remove();
 //}
+
+
 
 
 
