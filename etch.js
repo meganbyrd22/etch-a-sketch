@@ -3,9 +3,6 @@ const gridContainer = document.getElementById("gridContainer");
 const newGridButton = document.getElementById("newGridButton");
 let numSquares = Number(" ")
 
-
-
-
 //funtion to create grid
 function createGrid(){
     //create grid
@@ -35,10 +32,15 @@ function changeColor(e){
 
 //button function for prompt 
 newGridButton.addEventListener('click', function(){let numSquares = Number(prompt("Please enter the number of squares you'd like for each side of your grid"));
-removeGrid(); createGrid(numSquares); });
+removeGrid();
+createGrid(numSquares)
+ });
+ 
 
 //function to remove old grid 
-function removeGrid(){document.getElementById("gridContainer").innerHTML = " ";}
+function removeGrid(){
+    document.getElementById("gridContainer").remove();
+}
 
 
 
