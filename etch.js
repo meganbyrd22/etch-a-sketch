@@ -35,8 +35,10 @@ function changeColor(e){
 
 //button function for prompt 
 newGridButton.addEventListener('click', function(){let numSquares = Number(prompt("Please enter the number of squares you'd like for each side of your grid"));
-createGrid(numSquares)});
+removeGrid(); createGrid(numSquares); });
 
+//function to remove old grid 
+function removeGrid(){document.getElementById("gridContainer").innerHTML = " ";}
 
 
 
