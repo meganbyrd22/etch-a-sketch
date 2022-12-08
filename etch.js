@@ -31,16 +31,21 @@ function changeColor(e){
 }
 
 //button function for prompt 
-newGridButton.addEventListener('click', function(){let numSquares = Number(prompt("Please enter the number of squares you'd like for each side of your grid"));
-removeGrid();
-createGrid(numSquares)
- });
+newGridButton.addEventListener('click', function(){
+    let numSquares = Number(prompt("Please enter the number of squares you'd like for each side of your grid"));
+    removeGrid();
+    createGrid(numSquares);})
  
+//function call to remove old grid
+//newGridButton.addEventListener('click', removeGrid())
 
 //function to remove old grid 
 function removeGrid(){
-    document.getElementById("gridContainer").remove();
+    gridContainer.replaceChildren();
 }
+
+
+
 
 
 
