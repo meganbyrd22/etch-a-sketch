@@ -4,11 +4,11 @@ const newGridButton = document.getElementById("newGridButton");
 let numSquares = Number(" ")
 
 //funtion to create grid
-function createGrid(){
+function createGrid(numSquares){
     //create grid
-    for (let rows = 0; rows <16; rows++)
+    for (let rows = 0; rows < numSquares; rows++)
     {
-        for (let columns = 0; columns <16; columns++){
+        for (let columns = 0; columns < numSquares; columns++){
 
     //create cell element    
     let cell = document.createElement("div");
