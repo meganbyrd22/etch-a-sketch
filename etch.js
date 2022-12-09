@@ -34,12 +34,34 @@ function changeColor(e){
 newGridButton.addEventListener('click', function(){
     let numSquares = Number(prompt("Please enter the number of squares you'd like for each side of your grid"));
     removeGrid();
-    createGrid(numSquares);})
+    createGrid(numSquares)
+    resizeGrid(createGrid);})
 
 //function to remove old grid 
 function removeGrid(){
     gridContainer.replaceChildren();
 }
+
+//adjust size of squares based on input
+function resizeGrid(){
+    let cell = document.getElementById("cell")
+    if (1 < numSquares >25){
+        cell.style.height = "75px";
+        cell.style.width = "75px";}
+    else if (26 < numSquares > 50){
+        cell.style.height = "50px";
+        cell.style.width = "50px";
+    }
+    else if (51 < numSquares > 75 ){
+        cell.style.height = "50px";
+        cell.style.width = "50px";
+    }
+    else if (76 < numSquares > 99){
+        cell.style.height = "50px";
+        cell.style.width = "50px";
+    }
+    }
+
 
 
 
