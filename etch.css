@@ -37,14 +37,16 @@ body{
 
 #gridContainer {
     display: grid;
+    grid: repeat(10, 1fr,)/repeat(10,1fr);
     grid-template-columns:repeat(auto-fill, minmax(50px, 1fr));
     /*grid-template-rows: repeat(auto-fit,minmax(50px,1fr));*/
     justify-content: stretch;
+    align-content: stretch;
     grid-gap: 0;
-    grid-auto-flow: dense;
+    /*grid-auto-flow: dense;*/
     background-color: whitesmoke;
     width: 800px;
-    height: auto;
+    height: 100%;
     margin: 0 auto;
     object-fit: fill;
 }
