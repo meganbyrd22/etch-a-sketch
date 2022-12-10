@@ -28,27 +28,37 @@ body{
     padding: 20px;
 }
 
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
 #gridContainer {
     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-columns:repeat(auto-fill, minmax(50px, 1fr));
     /*grid-template-rows: repeat(auto-fit,minmax(50px,1fr));*/
-    align-content: stretch;
+    justify-content: stretch;
     grid-gap: 0;
-    /*grid-auto-flow: dense;*/
+    grid-auto-flow: dense;
     background-color: whitesmoke;
     width: 800px;
     height: auto;
     margin: 0 auto;
+    object-fit: fill;
 }
 
 #cell{
     border-color: black;
     border: solid black;
     display: flex;
+    flex-flow: column;
     justify-items: center;
+    flex-grow: auto;
     box-sizing: border-box;
-    width: 50px;
-    height: 50px;
+    /*width: 100%;
+    height: 100%;*/
     padding-bottom: 100%;
 }
 
@@ -57,8 +67,8 @@ body{
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 60px;
-    width: 120px;
+    height: 75px;
+    width: 200px;
 }
 
 
