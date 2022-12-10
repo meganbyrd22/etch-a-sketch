@@ -35,7 +35,7 @@ newGridButton.addEventListener('click', function(){
     let numSquares = Number(prompt("Please enter the number of squares you'd like for each side of your grid"));
     removeGrid();
     createGrid(numSquares)
-    resizeGrid(createGrid);})
+    resizeGrid(numSquares);})
 
 //function to remove old grid 
 function removeGrid(){
