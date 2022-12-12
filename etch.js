@@ -48,10 +48,10 @@ function removeGrid(){
 //adjust size of squares based on input
 function resizeGrid(){
     let cell = document.getElementById("cell");
-    let numSquares = " ";
+    //let numSquares = " ";
 
     if (1 < numSquares >25){
-        cell.setAttribute("height = 100px");
+        cell.setAttribute("height= 100px");
         cell.setAttribute("width = 100px")}
     else if (26 < numSquares > 50){
         cell.setAttribute("height = 75px");
