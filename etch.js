@@ -51,19 +51,19 @@ function resizeGrid(){
     let numSquares = " ";
 
     if (1 < numSquares >25){
-        cell.style.height = "75px";
-        cell.style.width = "75px";}
+        cell.setAttribute("height = 100px");
+        cell.setAttribute("width = 100px")}
     else if (26 < numSquares > 50){
-        cell.style.height = "50px";
-        cell.style.width = "50px";
+        cell.setAttribute("height = 75px");
+        cell.setAttribute("width = 75px")
     }
     else if (51 < numSquares > 75 ){
-        cell.style.height = "50px";
-        cell.style.width = "50px";
+        cell.setAttribute("height = 50px");
+        cell.setAttribute("width = 50px")
     }
     else if (76 < numSquares > 99){
-        cell.style.height = "50px";
-        cell.style.width = "50px";
+        cell.setAttribute("height = 25px");
+        cell.setAttribute("width = 25px")
     }
     gridContainer.setAttribute(`grid-template`, `repeat (${numSquares}, 1 fr)/ repeat(${numSquares}, 1 fr)`);
     }
