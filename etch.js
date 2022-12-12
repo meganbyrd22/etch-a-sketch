@@ -7,8 +7,7 @@ function createGrid(numSquares){
     //create grid
     for (let rows = 0; rows < numSquares * numSquares; rows++)
     {
-        //for (let columns = 0; columns < numSquares; columns++){
-
+   
     //create cell element    
     let cell = document.createElement("div");
     
@@ -21,6 +20,7 @@ function createGrid(numSquares){
     gridContainer.appendChild(cell)
     } 
 
+    //create grid template for even distribution of squares
     gridContainer.setAttribute('style',`grid-template: repeat(${numSquares}, 1fr) / repeat(${numSquares}, 1fr)`)
 }
 
@@ -41,30 +41,6 @@ newGridButton.addEventListener('click', function(){
 function removeGrid(){
     gridContainer.replaceChildren();
 }
-
-//adjust size of squares based on input
-//function resizeGrid(){
-    //let cell = document.getElementById("cell");
-    //let numSquares = " ";
-
-    //if (1 < numSquares >25){
-        //cell.setAttribute/("height= 100px");
-       // cell.setAttribute("width = 100px")}
-   // else if (26 < numSquares > 50){
-        //cell.setAttribute("height = 75px");
-       // cell.setAttribute("width = 75px")
-    //}
-    //else if (51 < numSquares > 75 ){
-        //cell.setAttribute("height = 50px");
-       // cell.setAttribute("width = 50px")
-    //}
-   // else if (76 < numSquares > 99){
-        //cell.setAttribute("height = 25px");
-       // cell.setAttribute("width = 25px")
-    //}
-
-   //}
-
 
 
 
