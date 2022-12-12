@@ -23,7 +23,10 @@ function createGrid(numSquares){
     } 
 }
 }
-createGrid(16);
+createGrid(16); 
+resizeGrid(numSquares);
+
+
 
 //function to change color 
 function changeColor(e){
@@ -35,7 +38,7 @@ newGridButton.addEventListener('click', function(){
     let numSquares = Number(prompt("Please enter the number of squares you'd like for each side of your grid"));
     removeGrid();
     createGrid(numSquares)
-    resizeGrid(numSquares);})
+    resizeGrid(numSquares)})
 
 //function to remove old grid 
 function removeGrid(){
@@ -44,7 +47,9 @@ function removeGrid(){
 
 //adjust size of squares based on input
 function resizeGrid(){
-    let cell = document.getElementById("cell")
+    let cell = document.getElementById("cell");
+    let numSquares = " ";
+
     if (1 < numSquares >25){
         cell.style.height = "75px";
         cell.style.width = "75px";}
@@ -60,6 +65,7 @@ function resizeGrid(){
         cell.style.height = "50px";
         cell.style.width = "50px";
     }
+    gridContainer.setAttribute(`grid-template`, `repeat (${numSquares}, 1 fr)/ repeat(${numSquares}, 1 fr)`);
     }
 
 
