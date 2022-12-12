@@ -21,35 +21,34 @@ h1{
 body{
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    padding: 20px;
+    margin: 0;
+    /*padding: 20px;*/
 }
 
 
 #gridContainer {
     display: grid;
-    grid-template: repeat(numSquares, 1fr,)/repeat(numSquares,1fr);
-    grid-template-columns:repeat(auto-fill, minmax(50px, 1fr));
+    /*grid-template: repeat(numSquares, 1fr,)/repeat(numSquares,1fr);*/
+    /*grid-template-columns:repeat(auto-fill, minmax(50px, 1fr));
     /*grid-template-columns:repeat(auto-fill, minmax(numSquares, 1fr));*/
     /*grid-template-rows: repeat(auto-fit,minmax(50px,1fr));
     /*justify-content: stretch;*/
     /*align-content: stretch;*/
-    grid-gap: 0;
+    /*grid-gap: 0;
     /*grid-auto-flow: dense;*/
     background-color: whitesmoke;
     width: 800px;
     height: 800px;
-    margin: 0 auto;
+   /* margin: 0 auto;
     /*object-fit: fill;*/
 }
 
 #cell{
-    border-color: black;
-    border: solid black;
-    display: flex;
+    border: 1px solid black;
+    /*display: flex;
     flex-flow: column;
     justify-items: center;
     flex-grow: auto;
