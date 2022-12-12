@@ -1,14 +1,13 @@
 //add html elements
 const gridContainer = document.getElementById("gridContainer");
 const newGridButton = document.getElementById("newGridButton");
-let numSquares = Number(" ")
 
 //funtion to create grid
 function createGrid(numSquares){
     //create grid
-    for (let rows = 0; rows < numSquares; rows++)
+    for (let rows = 0; rows < numSquares * numSquares; rows++)
     {
-        for (let columns = 0; columns < numSquares; columns++){
+        //for (let columns = 0; columns < numSquares; columns++){
 
     //create cell element    
     let cell = document.createElement("div");
@@ -21,12 +20,11 @@ function createGrid(numSquares){
     //append to DOM
     gridContainer.appendChild(cell)
     } 
-}
-}
-createGrid(16); 
-resizeGrid(numSquares);
 
+    gridContainer.setAttribute('style',`grid-template: repeat(${numSquares}, 1fr) / repeat(${numSquares}, 1fr)`)
+}
 
+createGrid(16);
 
 //function to change color 
 function changeColor(e){
@@ -37,8 +35,7 @@ function changeColor(e){
 newGridButton.addEventListener('click', function(){
     let numSquares = Number(prompt("Please enter the number of squares you'd like for each side of your grid"));
     removeGrid();
-    createGrid(numSquares)
-    resizeGrid(numSquares)})
+    createGrid(numSquares)})
 
 //function to remove old grid 
 function removeGrid(){
@@ -46,27 +43,27 @@ function removeGrid(){
 }
 
 //adjust size of squares based on input
-function resizeGrid(){
-    let cell = document.getElementById("cell");
+//function resizeGrid(){
+    //let cell = document.getElementById("cell");
     //let numSquares = " ";
 
-    if (1 < numSquares >25){
-        cell.setAttribute("height= 100px");
-        cell.setAttribute("width = 100px")}
-    else if (26 < numSquares > 50){
-        cell.setAttribute("height = 75px");
-        cell.setAttribute("width = 75px")
-    }
-    else if (51 < numSquares > 75 ){
-        cell.setAttribute("height = 50px");
-        cell.setAttribute("width = 50px")
-    }
-    else if (76 < numSquares > 99){
-        cell.setAttribute("height = 25px");
-        cell.setAttribute("width = 25px")
-    }
-    gridContainer.setAttribute(`grid-template`, `repeat (${numSquares}, 1 fr)/ repeat(${numSquares}, 1 fr)`);
-    }
+    //if (1 < numSquares >25){
+        //cell.setAttribute/("height= 100px");
+       // cell.setAttribute("width = 100px")}
+   // else if (26 < numSquares > 50){
+        //cell.setAttribute("height = 75px");
+       // cell.setAttribute("width = 75px")
+    //}
+    //else if (51 < numSquares > 75 ){
+        //cell.setAttribute("height = 50px");
+       // cell.setAttribute("width = 50px")
+    //}
+   // else if (76 < numSquares > 99){
+        //cell.setAttribute("height = 25px");
+       // cell.setAttribute("width = 25px")
+    //}
+
+   //}
 
 
 
