@@ -6,4 +6,6 @@ The etch-a-sketch project was completed as the second javascript project in The 
 
 -Detailed skills: loops, appending to DOM, setting attributes via JS, button event listener, mouse enter event listener, user input.
 
+Live demo: https://meganbyrd22.github.io/etch-a-sketch/
+
 (Completed December 2022)
